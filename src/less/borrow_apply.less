@@ -1,0 +1,49 @@
+// 引入重置
+@import url('./reset.less');
+
+// 引入颜色
+@import url('./color.less');
+
+// 引入头部
+@import url('header.less');
+
+// 引入导航
+@import url('./topNav.less');
+// 蓝色标题
+#bgBlue{
+    height: 120px;
+    border-left: 2px solid #0099DD;
+    padding: 10px 0 8px 10px;
+    h3{
+        color: #0099DD;
+    }
+    span{
+        margin-right: 30px;
+    }
+}
+// 右侧标题
+#rightTitle{
+    h4{
+        font-size: 20px;
+    }
+    .btnTitle{
+        font-size: 16px;
+        height: 30px;
+        width: 70px;
+        line-height: 30px;
+        font-weight: bold;
+        position: absolute;
+        left: 103px;
+        top: 156px;
+        color: @colorWhite;
+        border-radius: 6px;
+        text-align: center;
+        background-color: @colorTitle;
+    }
+
+}
+#borrowForm{
+    width: 60%;
+}
+// 引入页脚
+@import url('./footer.less'); 

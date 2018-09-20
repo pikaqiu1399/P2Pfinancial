@@ -1,0 +1,40 @@
+// 引入颜色
+@import url('./color.less');
+
+// 引入重置
+@import url('./reset.less');
+
+
+// 下导航
+#mainMenu{
+    &>li{
+        text-align: center;
+        &>a{
+            display: inline-block;
+            min-width: 80px;
+            line-height: 38px;
+            font-size: 16px;
+            &:hover{
+                background-color: #efeeee;
+                color: @colorBlue;
+            }
+        }
+    }
+}
+
+// 菜单栏标题
+.topNavList{  
+    margin-bottom: 10px;
+    .panel-body{
+        padding: 0!important;
+        .navbar-header{
+            .navbar-brand{
+                img{
+                    position: relative;
+                    top:5px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+// 引入颜色
+@import url('./color.less');
+
+// 引入重置
+@import url('./reset.less');
+// 上导航
+.header{
+    margin-bottom: 0;
+    .navbar-nav{
+        &>li{
+            &>a{
+                color: @colorWhite!important;
+                &:hover{
+                    color: @colorBlue!important;
+                }
+            }
+        }
+    }
+}
+.phone{
+    .navbar-brand{
+    color: @colorWhite!important;
+    font-size: 24px;
+    font-style: italic;
+    span{
+        color:@colorWhite;
+        margin-right: 10px;
+    }
+}
+}
+
+//工具提示的图片大小
+.tooltip img{
+    width: 100px;
+}

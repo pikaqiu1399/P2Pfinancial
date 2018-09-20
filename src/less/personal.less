@@ -1,0 +1,107 @@
+// 引入重置
+@import url('./reset.less');
+
+// 引入颜色
+@import url('./color.less');
+
+// 引入头部
+@import url('header.less');
+
+// 引入导航
+@import url('./topNav.less');
+
+
+// 引入页脚
+@import url('./footer.less');  
+
+// 折叠框
+#accordion{
+    .panel-default{
+        .panel-heading{
+            a{
+           font-size: 14px!important;
+           color: #337ab7;
+            }
+        }
+    }
+}
+// 面板
+#rightMain{
+    #button{
+        border: none;
+        margin-bottom: 10px;
+    }
+    .personMsg{
+        .myImg{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            margin-right: 20px;
+            text-align: center;
+            img{
+                width: 90px;
+               margin-top: 6px;
+            }
+        }
+        li{
+            line-height: 30px;
+        }
+    }
+    .provePic{
+        position: relative;
+        left: -3px;
+        top: -16px;
+    }
+    // 认证标题
+    .proveTitle{
+        display: inline-block;
+        h4{
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+    }
+}
+// 每排间距
+.row{
+    margin-top: 30px!important;
+}
+
+//小和超小（768px）采用定位技术
+@media all and (max-width:768px){
+    //父级
+    #personal{
+        height: 905px;
+        position: relative;
+        left: 0px;//菜单打开
+        transition: all 1s;
+        // 左侧
+        #accordion{
+            position: absolute;
+            left: 0;
+        }
+        // 右侧
+        #rightMain{
+            position: absolute;
+            left:50%;
+            #btnOff{
+                display: inline-block;
+            }
+        }
+
+    }
+}
+body{
+    overflow-x: hidden;
+}
+//按钮样式
+#btnOff{
+    border: none;
+    display: none;
+}
+//菜单关闭
+#personal.active{
+    left: -50%;
+}
+
+

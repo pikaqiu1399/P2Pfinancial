@@ -1,0 +1,75 @@
+
+// 引入头部
+@import url('header.less');
+
+// 引入导航
+@import url('./topNav.less');
+
+// 三大特色
+#feature{
+   h3{
+       font-size: 20px;
+       font-weight: bold;
+   }
+
+   &>div{
+       background: url('../../../images/feature01.png') no-repeat left center;
+       height: 97px;
+       padding-left: 70px;
+   }
+
+   &>div:nth-of-type(3){
+        background: url('../../../images/feature03.png') no-repeat left center;
+        height: 97px;
+        padding-left: 70px;
+        }
+
+    &>div:nth-of-type(2){
+        background: url('../../../images/feature02.png') no-repeat left center;
+        height: 97px;
+    }
+}
+// 媒体查询隐藏单元格部分内容
+@media screen and (max-width:480px){
+    .displayTr {
+        display: none;
+    }
+}
+// 蓝色加粗标题
+.blueTitle{
+    border: none;
+    .panel-heading{
+        padding: 0!important;
+        background-color: transparent!important;
+        .pull-left{
+            font-size: 22px!important;
+            font-weight: bold;
+            color: @colorTitle!important;
+            line-height: 38px;
+            border-bottom: 3px solid #2e8ece;
+            margin: 0; 
+            }
+        .pull-right{
+            margin-top: 10px;
+        }
+    }
+    
+}
+// 新闻列表
+.list{
+    padding: 5px!important;
+    li{
+        line-height: 50px;
+        border-bottom: 1px solid #eee;
+        a{
+            color: @colorBlack;
+            text-decoration: none;
+            &:hover{
+                color: @colorTitle!important;
+            }
+        }
+    }
+}
+
+// 引入页脚
+@import url('./footer.less');

@@ -1,0 +1,61 @@
+// 引入重置
+@import url('./reset.less');
+
+// 引入颜色
+@import url('./color.less');
+
+// 引入头部
+@import url('header.less');
+
+// 引入导航
+@import url('./topNav.less');
+.row{
+    margin-bottom: 30px;
+}
+.borrow{
+    width: 360px;
+    //标题
+    .borrowTitle{
+        height: 50px;
+        padding: 12px 0 10px 16px;
+       h3{
+        margin: 0!important;
+        color: @colorWhite;
+       }
+    }
+    // 内容
+    .borrowMain{
+        background-color: #f9f9f9;
+        &>p:first-child{
+            font-size: 16px;
+        }
+        .grayText{
+            color: #737373;
+        }
+        padding: 16px;
+        ul{
+            li{
+                margin-bottom: 5px;
+                i{
+                    color: rgb(241, 113, 134);
+                    font-size: 18px; 
+                }
+                span{
+                    line-height: 20px;
+                    position: relative;
+                    top:-2px;
+                    color: #555;
+                }
+            }
+        }
+        button{
+            border-radius: 20px;
+            color: @colorWhite;
+            width: 90px;
+            height: 30px;
+            line-height: 18px;
+        }
+    }
+}
+// 引入页脚 
+@import url('./footer.less'); 

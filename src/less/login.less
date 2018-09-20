@@ -1,0 +1,54 @@
+// 引入颜色
+@import url('./color.less');
+
+// 引入重置
+@import url('./reset.less');
+
+// 引入头部
+@import url('header.less');
+
+// 引入导航
+@import url('./topNav.less');
+
+.navbar{
+    margin-bottom: 0!important;
+}
+// 导航标题
+.panel-body{
+    h2{
+        display: inline-block;
+        color: @colorTitle!important;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+//表单样式
+    .reglogin{
+        form{
+            width: 60%;
+            margin: 20px auto;
+        }
+    }
+//蒙层样式
+#loginModalTitle{
+    font-size: 22px;
+    font-weight: bold;
+}
+#loginModalContent{ 
+    #timeNum{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    span{
+        font-style: 22px;
+        font-weight: bold;
+    }
+    .glyphicon-ok{
+        color: rgb(32, 172, 32);
+    }
+    .glyphicon-remove{
+        color: rgb(240, 42, 42);
+    }
+}
+// 引入页脚
+@import url('./footer.less'); 
